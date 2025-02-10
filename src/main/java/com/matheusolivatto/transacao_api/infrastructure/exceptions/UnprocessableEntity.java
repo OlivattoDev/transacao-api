@@ -1,4 +1,4 @@
-package infrastructure.exceptions;
+package com.matheusolivatto.transacao_api.infrastructure.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -10,5 +10,4 @@ public class UnprocessableEntity extends RuntimeException {
 	public UnprocessableEntity(String message) {
 		super(message);
 	}
-
 }

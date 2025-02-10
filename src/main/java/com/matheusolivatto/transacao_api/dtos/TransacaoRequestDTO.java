@@ -1,4 +1,4 @@
-package controllers.dtos;
+package com.matheusolivatto.transacao_api.dtos;
 
 import java.time.OffsetDateTime;
 

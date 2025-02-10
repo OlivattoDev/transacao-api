@@ -1,4 +1,4 @@
-package business.services;
+package com.matheusolivatto.transacao_api.services;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
@@ -6,8 +6,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import controllers.dtos.TransacaoRequestDTO;
-import infrastructure.exceptions.UnprocessableEntity;
+import com.matheusolivatto.transacao_api.dtos.TransacaoRequestDTO;
+import com.matheusolivatto.transacao_api.infrastructure.exceptions.UnprocessableEntity;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -45,6 +46,7 @@ public class TransacaoService {
 	public List<TransacaoRequestDTO> buscarTransacao(Integer intervaloBusca) {
 		OffsetDateTime dataHoraIntervalo = OffsetDateTime.now().minusSeconds(intervaloBusca);
 		
-		return listaTransacao.stream().filter(transacao -> transacao.dataHora().isAfter(dataHoraIntervalo)).toList();
+		return listaTransacao.stream().filter(transacao -> transacao.dataHora()
+				.isAfter(dataHoraIntervalo)).toList();
 	}
 }
