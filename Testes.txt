@@ -1,0 +1,26 @@
+					TESTES	
+
+
+
+
+==================  FEITOS  ==================
+
+Containerização - feito com o docker. Como documentar a parte do docker no readme.
+
+Documentação API - já foi feito com o swagger.
+
+
+
+
+
+
+==================  A FAZER  ==================
+
+Tratamento de erros (feito alguns, mas ainda tem o GlobalExceptionHandler).
+
+Obervabilidade (o Spring actuator).
+
+Performance (tempo para calcular as estatísticas).
+
+Documentação sistema (readme.md).
+
