@@ -38,10 +38,21 @@ public class EstatisticaService {
 		
 		log.info("Estatística retornada com sucesso");
 		
+		simulateLatency();
+		
 		return new EstatisticaResponseDTO(estatisticasTransacao.getCount(),
 				estatisticasTransacao.getSum(),
 				estatisticasTransacao.getAverage(),
 				estatisticasTransacao.getMin(),
 				estatisticasTransacao.getMax());
+	}
+
+	private void simulateLatency() {
+		try {
+			long time = 1000L;
+			Thread.sleep(time);
+		} catch (InterruptedException e) {
+			throw new IllegalStateException(e);
+		}
 	}
 }

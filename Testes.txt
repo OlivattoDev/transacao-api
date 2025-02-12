@@ -18,9 +18,9 @@ Documentação API - já foi feito com o swagger.
 
 Tratamento de erros (feito alguns, mas ainda tem o GlobalExceptionHandler).
 
-Obervabilidade (o Spring actuator).
+Obervabilidade (o Spring actuator) (feito com base no video do Caio Rodrigues - https://docs.spring.io/spring-boot/reference/actuator/endpoints.html).
 
-Performance (tempo para calcular as estatísticas).
+Performance (tempo para calcular as estatísticas - cache).
 
 Documentação sistema (readme.md).
 
